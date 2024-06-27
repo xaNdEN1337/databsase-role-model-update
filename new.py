@@ -23,8 +23,8 @@ try:
                     and schemaname !='public' \
                     order by schemaname;")
     # # Получить результат
-    # record = cursor.fetchone()
-    # print("Вы подключены к - ", record, "\n")
+    record = cursor.fetchone()
+    print("record, \n")
 
 except (Exception, Error) as error:
     print("Ошибка при работе с PostgreSQL", error)
